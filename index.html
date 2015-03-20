@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <style type="text/css">
     .top-background {
-      background: url({{gdgData.backgroundUrl}});
       background-size: cover;
       background-position: center;
       margin: 0 0 20px;
@@ -21,7 +20,7 @@
   </head>
   <body>
 
-  <div class="top-background">
+  <div class="top-background" ng-style="{'background': 'url(' + gdgData.backgroundUrl + ')'}">
     <div class="row">
       <div class="large-12 columns">
         <a href="{{gdgData.siteUrl}}" class="logo"><img ng-src="{{gdgData.logoUrl}}" /></a>
